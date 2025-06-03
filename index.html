@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Expert en réparation, fabrication et installation d'équipements pour la production artisanale de terre cuite. Solutions sur mesure pour ateliers et artisans.">
+    <title>Artisan Terre Cuite - Réparation, Fabrication & Installation d'Équipements</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .hero-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1586771107445-d3ca888129ce?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        .section-title {
+            @apply text-3xl md:text-4xl font-bold text-center mb-8 text-orange-700 relative pb-4;
+        }
+        .section-title:after {
+            content: '';
+            @apply absolute bottom-0 left-1/2 transform -translate-x-1/2 w-20 h-1 bg-orange-500 rounded-full;
+        }
+        .service-card {
+            @apply bg-white rounded-lg shadow-lg p-6 transform transition duration-300 hover:scale-105 border-t-4 border-orange-500;
+        }
+        .gallery-item {
+            @apply rounded-lg shadow-md overflow-hidden transition duration-300 hover:shadow-xl;
+        }
+        .placeholder {
+            @apply bg-gray-100 w-full flex items-center justify-center text-gray-400 rounded-md;
+        }
+        .whatsapp-btn {
+            @apply fixed bottom-6 right-6 bg-green-500 text-white p-3 rounded-full shadow-lg z-50 hover:bg-green-600 transition;
+        }
+        .feature-list li {
+            @apply mb-2 flex items-start;
+        }
+        .feature-list li:before {
+            content: '✓';
+            @apply text-orange-500 font-bold mr-2;
+        }
+    </style>
+</head>
+<body class="bg-orange-50">
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/212XXXXXXXXX" class="whatsapp-btn" target="_blank">
+        <i class="fab fa-whatsapp text-2xl"></i>
+    </a>
+
+    <nav class="bg-orange-600 text-white p-4 shadow-md sticky top-0 z-50">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold flex items-center">
+                <i class="fas fa-clay-brick mr-2"></i> Artisan Terre Cuite
+            </a>
+            <button id="menu-button" class="md:hidden block text-white focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+            <div id="menu-links" class="hidden md:flex space-x-6">
+                <a href="#services" class="hover:text-orange-200 transition">Nos Services</a>
+                <a href="#fabrication" class="hover:text-orange-200 transition">Étude & Fabrication</a>
+                <a href="#installation" class="hover:text-orange-200 transition">Installation</a>
+                <a href="#galerie" class="hover:text-orange-200 transition">Réalisations</a>
+                <a href="#contact" class="hover:text-orange-200 transition">Contact</a>
+            </div>
+        </div>
+    </nav>
+    
+    <div id="mobile-menu" class="hidden md:hidden bg-orange-600 text-white p-4">
+        <a href="#services" class="block py-3 hover:text-orange-200 border-b border-orange-500">Nos Services</a>
+        <a href="#fabrication" class="block py-3 hover:text-orange-200 border-b border-orange-500">Étude & Fabrication</a>
+        <a href="#installation" class="block py-3 hover:text-orange-200 border-b border-orange-500">Installation</a>
+        <a href="#galerie" class="block py-3 hover:text-orange-200 border-b border-orange-500">Réalisations</a>
+        <a href="#contact" class="block py-3 hover:text-orange-200">Contact</a>
+    </div>
+
+    <header class="hero-section h-screen flex items-center justify-center text-white">
+        <div class="text-center bg-black bg-opacity-50 p-8 md:p-12 rounded-lg mx-4">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4 leading-tight">Expertise en Équipements pour Terre Cuite</h1>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">Solutions complètes de réparation, fabrication et installation pour vos projets artisanaux en terre cuite.</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#contact" class="bg-orange-500 hover:bg-orange-700 text-white font-bold py-3 px-6 rounded-lg text-lg transition">
+                    <i class="fas fa-envelope mr-2"></i> Demander un Devis
+                </a>
+                <a href="tel:+212XXXXXXXXX" class="bg-white hover:bg-gray-100 text-orange-600 font-bold py-3 px-6 rounded-lg text-lg transition">
+                    <i class="fas fa-phone mr-2"></i> Nous Appeler
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section id="services" class="py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="section-title">Nos Services Spécialisés</h2>
+            <p class="text-center text-gray-600 mb-12 max-w-3xl mx-auto">
+                Nous offrons une gamme complète de services pour soutenir votre production artisanale de terre cuite, 
+                depuis la conception jusqu'à la maintenance de vos équipements.
+            </p>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="service-card">
+                    <div class="text-orange-500 mb-4 text-4xl">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-orange-600 mb-3">Réparation et Maintenance</h3>
+                    <p class="text-gray-700 mb-4">
+                        Service complet de réparation et maintenance pour tous vos équipements de production de terre cuite :
+                        presses, extrudeuses, fours, séchoirs et autres machines spécialisées.
+                    </p>
+                    <ul class="feature-list text-gray-700 mb-4">
+                        <li>Diagnostic précis des pannes</li>
+                        <li>Intervention rapide sur site</li>
+                        <li>Maintenance préventive</li>
+                        <li>Pièces de rechange disponibles</li>
+                    </ul>
+                    <a href="#contact" class="text-orange-500 hover:text-orange-700 font-semibold inline-flex items-center">
+                        Besoin de réparation ? <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+
+                <div class="service-card">
+                    <div class="text-orange-500 mb-4 text-4xl">
+                        <i class="fas fa-drafting-compass"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-orange-600 mb-3">Étude et Fabrication</h3>
+                    <p class="text-gray-700 mb-4">
+                        Conception et fabrication d'équipements sur mesure adaptés à vos besoins spécifiques 
+                        en production de terre cuite.
+                    </p>
+                    <ul class="feature-list text-gray-700 mb-4">
+                        <li>Bureau d'études dédié</li>
+                        <li>Conception CAO 3D</li>
+                        <li>Choix des matériaux adaptés</li>
+                        <li>Fabrication locale de qualité</li>
+                    </ul>
+                    <a href="#fabrication" class="text-orange-500 hover:text-orange-700 font-semibold inline-flex items-center">
+                        En savoir plus <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+
+                <div class="service-card">
+                    <div class="text-orange-500 mb-4 text-4xl">
+                        <i class="fas fa-wrench"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-orange-600 mb-3">Installation Professionnelle</h3>
+                    <p class="text-gray-700 mb-4">
+                        Installation complète de lignes de production pour produits en terre cuite, 
+                        avec mise en service et formation des opérateurs.
+                    </p>
+                    <ul class="feature-list text-gray-700 mb-4">
+                        <li>Installation sur site</li>
+                        <li>Paramétrage et réglages</li>
+                        <li>Tests de fonctionnement</li>
+                        <li>Formation des équipes</li>
+                    </ul>
+                    <a href="#installation" class="text-orange-500 hover:text-orange-700 font-semibold inline-flex items-center">
+                        Voir nos installations <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="fabrication" class="py-16 bg-orange-100">
+        <div class="container mx-auto px-4">
+            <h2 class="section-title">Étude et Fabrication sur Mesure</h2>
+            
+            <div class="flex flex-col lg:flex-row items-center gap-8 mb-12">
+                <div class="lg:w-1/2">
+                    <h3 class="text-2xl font-semibold text-orange-600 mb-3">Solutions Personnalisées pour Votre Production</h3>
+                    <p class="text-gray-700 mb-4">
+                        Notre équipe d'ingénieurs et techniciens conçoit et fabrique des équipements adaptés 
+                        aux spécificités de la terre cuite artisanale. Nous comprenons les défis techniques 
+                        de ce matériau et développons des solutions robustes et efficaces.
+                    </p>
+                    <div class="grid md:grid-cols-2 gap-4 mb-4">
+                        <div>
+                            <h4 class="font-semibold text-orange-600 mb-2">Équipements Fabriqués :</h4>
+                            <ul class="feature-list text-gray-700">
+                                <li>Presses à briques/tuiles</li>
+                                <li>Extrudeuses</li>
+                                <li>Moules spécifiques</li>
+                                <li>Fours artisanaux</li>
+                                <li>Séchoirs</li>
+                                <li>Machines de découpe</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-orange-600 mb-2">Notre Process :</h4>
+                            <ul class="feature-list text-gray-700">
+                                <li>Analyse de vos besoins</li>
+                                <li>Étude technique détaillée</li>
+                                <li>Prototypage si nécessaire</li>
+                                <li>Fabrication contrôlée</li>
+                                <li>Tests rigoureux</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a href="#contact" class="inline-block bg-orange-500 hover:bg-orange-600 text-white font-bold py-2 px-6 rounded-lg transition">
+                        Demander une Étude
+                    </a>
+                </div>
+                <div class="lg:w-1/2">
+                    <div class="placeholder h-80 rounded-xl overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1584735422189-fbd23f0e7a0e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" 
+                             alt="Atelier de fabrication d'équipements pour terre cuite" 
+                             class="w-full h-full object-cover">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="bg-white p-8 rounded-xl shadow-lg">
+                <h3 class="text-2xl font-semibold text-orange-600 mb-6 text-center">Exemples de Nos Réalisations</h3>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="border border-orange-100 rounded-lg p-4 hover:shadow-md transition">
+                        <div class="placeholder h-48 mb-4 rounded-lg overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1590179575110-0a79e5830f1e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" 
+                                 alt="Presse à briques artisanale" 
+                                 class="w-full h-full object-cover">
+                        </div>
+                        <h4 class="font-bold text-orange-700">Presse à Briques Artisanale</h4>
+                        <p class="text-gray-600 text-sm">Conception robuste pour production moyenne</p>
+                    </div>
+                    <div class="border border-orange-100 rounded-lg p-4 hover:shadow-md transition">
+                        <div class="placeholder h-48 mb-4 rounded-lg overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1586771107445-d3ca888129ce?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" 
+                                 alt="Four artisanal pour terre cuite" 
+                                 class="w-full h-full object-cover">
+                        </div>
+                        <h4 class="font-bold text-orange-700">Four Artisanal Modulaire</h4>
+                        <p class="text-gray-600 text-sm">Température contrôlée jusqu'à 1100°C</p>
+                    </div>
+                    <div class="border border-orange-100 rounded-lg p-4 hover:shadow-md transition">
+                        <div class="placeholder h-48 mb-4 rounded-lg overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1589128777073-263566ae5e4d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" 
+                                 alt="Système de séchage" 
+                                 class="w-full h-full object-cover">
+                        </div>
+                        <h4 class="font-bold text-orange-700">Système de Séchage</h4>
+                        <p class="text-gray-600 text-sm">Optimisé pour pièces en terre cuite</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="installation" class="py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="section-title">Installation Professionnelle</h2>
+            <p class="text-center text-gray-600 mb-12 max-w-3xl mx-auto">
+                Nous assurons l'installation complète de votre matériel de production avec un savoir-faire technique 
+                spécifique aux produits artisanaux en terre cuite.
+            </p>
+            
+            <div class="flex flex-col lg:flex-row-reverse items-center gap-8 mb-12">
+                <div class="lg:w-1/2">
+                    <h3 class="text-2xl font-semibold text-orange-600 mb-3">Mise en Service Clé en Main</h3>
+                    <p class="text-gray-700 mb-4">
+                        Notre équipe intervient sur site pour installer, configurer et tester vos équipements 
+                        de production. Nous veillons à ce que chaque machine soit parfaitement opérationnelle 
+                        et adaptée à votre production spécifique.
+                    </p>
+                    <div class="bg-orange-50 p-4 rounded-lg mb-4">
+                        <h4 class="font-semibold text-orange-700 mb-2">Notre Processus d'Installation :</h4>
+                        <ol class="list-decimal list-inside text-gray-700 space-y-2">
+                            <li>Préparation du site selon les spécifications techniques</li>
+                            <li>Livraison et positionnement des équipements</li>
+                            <li>Assemblage et raccordements techniques</li>
+                            <li>Paramétrage et réglages précis</li>
+                            <li>Tests de fonctionnement et ajustements</li>
+                            <li>Formation des opérateurs</li>
+                            <li>Remise des documentations techniques</li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="lg:w-1/2">
+                    <div class="placeholder h-96 rounded-xl overflow-hidden shadow-lg">
+                        <img src="https://images.unsplash.com/photo-1597852074816-d933c7d2b988?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" 
+                             alt="Installation d'équipement pour terre cuite" 
+                             class="w-full h-full object-cover">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="bg-orange-100 p-8 rounded-xl">
+                <h3 class="text-2xl font-semibold text-orange-600 mb-6 text-center">Pourquoi Choisir Notre Service d'Installation ?</h3>
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="text-center p-4">
+                        <div class="text-orange-500 text-3xl mb-3">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                        <h4 class="font-bold text-orange-700 mb-2">Experts Techniques</h4>
+                        <p class="text-gray-600 text-sm">Techniciens spécialisés en équipements terre cuite</p>
+                    </div>
+                    <div class="text-center p-4">
+                        <div class="text-orange-500 text-3xl mb-3">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h4 class="font-bold text-orange-700 mb-2">Intervention Rapide</h4>
+                        <p class="text-gray-600 text-sm">Délais d'intervention optimisés</p>
+                    </div>
+                    <div class="text-center p-4">
+                        <div class="text-orange-500 text-3xl mb-3">
+                            <i class="fas fa-book"></i>
+                        </div>
+                        <h4 class="font-bold text-orange-700 mb-2">Documentation Complète</h4>
+                        <p class="text-gray-600 text-sm">Manuels techniques détaillés fournis</p>
+                    </div>
+                    <div class="text-center p-4">
+                        <div class="text-orange-500 text-3xl mb-3">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h4 class="font-bold text-orange-700 mb-2">Formation Incluse</h4>
+                        <p class="text-gray-600 text-sm">Prise en main de vos équipements</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="galerie" class="py-16 bg-orange-100">
+        <div class="container mx-auto px-4">
+            <h2 class="section-title">Nos Réalisations</h2>
+            <p class="text-center text-gray-600 mb-12 max-w-3xl mx-auto">
+                Découvrez quelques-unes de nos interventions et réalisations pour des artisans et ateliers de terre cuite.
+            </p>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="gallery-item bg-white">
+                    <div class="placeholder h-64">
+                        <img src="https://images.unsplash.com/photo-1589128777073-263566ae5e4d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" 
+                             alt="Réparation d'extrudeuse" 
+                             class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-4">
+                        <h4 class="font-semibold text-orange-700">Réparation d'Extrudeuse</h4>
+                        <p class="text-gray-600 text-sm">Intervention sur moteur et système de pression</p>
+                    </div>
+                </div>
+                <div class="gallery-item bg-white">
+                    <div class="placeholder h-64">
+                        <img src="https://images.unsplash.com/photo-1590179575110-0a79e5830f1e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" 
+                             alt="Presse artisanale sur mesure" 
+                             class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-4">
+                        <h4 class="font-semibold text-orange-700">Presse Artisanale</h4>
+                        <p class="text-gray-600 text-sm">Fabrication sur mesure pour production de briques</p>
+                    </div>
+                </div>
+                <div class="gallery-item bg-white">
+                    <div class="placeholder h-64">
+                        <img src="https://images.unsplash.com/photo-1586771107445-d3ca888129ce?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" 
+                             alt="Installation de four" 
+                             class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-4">
+                        <h4 class="font-semibold text-orange-700">Installation de Four</h4>
+                        <p class="text-gray-600 text-sm">Mise en service avec contrôle de température</p>
+                    </div>
+                </div>
+                <div class="gallery-item bg-white">
+                    <div class="placeholder h-64">
+                        <img src="https://images.unsplash.com/photo-1584735422189-fbd23f0e7a0e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" 
+                             alt="Maintenance préventive" 
+                             class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-4">
+                        <h4 class="font-semibold text-orange-700">Maintenance Préventive</h4>
+                        <p class="text-gray-600 text-sm">Contrôle et entretien de ligne de production</p>
+                    </div>
+                </div>
+                <div class="gallery-item bg-white">
+                    <div class="placeholder h-64">
+                        <img src="https://images.unsplash.com/photo-1597852074816-d933c7d2b988?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" 
+                             alt="Système de séchage" 
+                             class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-4">
+                        <h4 class="font-semibold text-orange-700">Système de Séchage</h4>
+                        <p class="text-gray-600 text-sm">Conception adaptée aux pièces délicates</p>
+                    </div>
+                </div>
+                <div class="gallery-item bg-white">
+                    <div class="placeholder h-64">
+                        <img src="https://images.unsplash.com/photo-1589128777073-263566ae5e4d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" 
+                             alt="Moules personnalisés" 
+                             class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-4">
+                        <h4 class="font-semibold text-orange-700">Moules Personnalisés</h4>
+                        <p class="text-gray-600 text-sm">Fabrication pour formes complexes</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="#contact" class="inline-block bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-8 rounded-lg text-lg transition">
+                    <i class="fas fa-images mr-2"></i> Voir Plus de Réalisations
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="section-title">Contactez Notre Équipe</h2>
+            <p class="text-center text-gray-600 mb-12 max-w-3xl mx-auto">
+                Pour toute demande d'information, devis ou intervention, notre équipe est à votre disposition.
+            </p>
+            
+            <div class="flex flex-col lg:flex-row gap-8">
+                <div class="lg:w-1/2 bg-white p-8 rounded-xl shadow-lg">
+                    <h3 class="text-2xl font-semibold text-orange-600 mb-6">Envoyez-nous un Message</h3>
+                    <form class="space-y-4">
+                        <div>
+                            <label for="name" class="block text-gray-700 mb-2">Votre Nom *</label>
+                            <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-gray-700 mb-2">Votre Email *</label>
+                            <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500">
+                        </div>
+                        <div>
+                            <label for="phone" class="block text-gray-700 mb-2">Téléphone</label>
+                            <input type="tel" id="phone" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500">
+                        </div>
+                        <div>
+                            <label for="service" class="block text-gray-700 mb-2">Service Concerné *</label>
+                            <select id="service" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500">
+                                <option value="">Sélectionnez un service</option>
+                                <option value="repair">Réparation/Maintenance</option>
+                                <option value="fabrication">Fabrication sur mesure</option>
+                                <option value="installation">Installation</option>
+                                <option value="other">Autre demande</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="message" class="block text-gray-700 mb-2">Votre Message *</label>
+                            <textarea id="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-4 rounded-lg transition">
+                            Envoyer le Message
+                        </button>
+                    </form>
+                </div>
+                
+                <div class="lg:w-1/2">
+                    <div class="bg-orange-50 p-8 rounded-xl h-full">
+                        <h3 class="text-2xl font-semibold text-orange-600 mb-6">Coordonnées</h3>
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <div class="text-orange-500 text-xl mr-4 mt-1">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-800">Adresse</h4>
+                                    <p class="text-gray-600">123 Rue des Artisans, Quartier Poterie<br>Marrakech, Maroc</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="text-orange-500 text-xl mr-4 mt-1">
+                                    <i class="fas fa-phone-alt"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-800">Téléphone</h4>
+                                    <p class="text-gray-600">
+                                        <a href="tel:+212612345678" class="hover:text-orange-600 transition">+212 6 12 34 56 78</a><br>
+                                        <a href="tel:+212522345678" class="hover:text-orange-600 transition">+212 5 22 34 56 78</a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="text-orange-500 text-xl mr-4 mt-1">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-800">Email</h4>
+                                    <p class="text-gray-600">
+                                        <a href="mailto:contact@artisan-terre-cuite.com" class="hover:text-orange-600 transition">contact@artisan-terre-cuite.com</a><br>
+                                        <a href="mailto:commercial@artisan-terre-cuite.com" class="hover:text-orange-600 transition">commercial@artisan-terre-cuite.com</a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="text-orange-500 text-xl mr-4 mt-1">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-800">Horaires d'Ouverture</h4>
+                                    <p class="text-gray-600">Lundi - Vendredi : 8h00 - 18h00<br>Samedi : 9h00 - 13h00</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-8">
+                            <h4 class="font-bold text-gray-800 mb-4">Suivez-nous</h4>
+                            <div class="flex space-x-4">
+                                <a href="#" class="text-orange-500 hover:text-orange-700 text-2xl">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+                                <a href="#" class="text-orange-500 hover:text-orange-700 text-2xl">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="#" class="text-orange-500 hover:text-orange-700 text-2xl">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                                <a href="#" class="text-orange-500 hover:text-orange-700 text-2xl">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-orange-800 text-orange-100 py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4 text-white">Artisan Terre Cuite</h3>
+                    <p class="mb-4">Spécialistes en équipements pour la production artisanale de terre cuite depuis 15 ans.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-orange-200 hover:text-white text-xl">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="#" class="text-orange-200 hover:text-white text-xl">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4 text-white">Services</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#services" class="hover:text-white transition">Réparation & Maintenance</a></li>
+                        <li><a href="#fabrication" class="hover:text-white transition">Étude & Fabrication</a></li>
+                        <li><a href="#installation" class="hover:text-white transition">Installation</a></li>
+                        <li><a href="#galerie" class="hover:text-white transition">Nos Réalisations</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4 text-white">Liens Utiles</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#contact" class="hover:text-white transition">Contact</a></li>
+                        <li><a href="#" class="hover:text-white transition">Mentions Légales</a></li>
+                        <li><a href="#" class="hover:text-white transition">Politique de Confidentialité</a></li>
+                        <li><a href="#" class="hover:text-white transition">CGV</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4 text-white">Newsletter</h3>
+                    <p class="mb-4">Abonnez-vous pour recevoir nos actualités et conseils.</p>
+                    <form class="flex">
+                        <input type="email" placeholder="Votre email" class="px-4 py-2 w-full rounded-l-lg focus:outline-none text-gray-800">
+                        <button type="submit" class="bg-orange-500 hover:bg-orange-600 text-white px-4 rounded-r-lg">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="border-t border-orange-700 pt-8 text-center">
+                <p>&copy; <span id="year"></span> Artisan Terre Cuite. Tous droits réservés.</p>
+                <p class="mt-2">Conçu avec passion pour l'artisanat traditionnel.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const menuButton = document.getElementById('menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        menuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            mobileMenu.classList.toggle('animate-slideDown');
+        });
+
+        // Close mobile menu when clicking a link
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Update year in footer
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Add smooth scrolling to all links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Animation on scroll
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-fadeIn');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.service-card, .section-title, .gallery-item').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
+
+</body>
+</html>
