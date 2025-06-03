@@ -45,6 +45,20 @@
             content: '✓';
             @apply text-orange-500 font-bold mr-2;
         }
+		.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+    height: 0;
+    overflow: hidden;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
     </style>
 </head>
 <body class="bg-orange-50">
@@ -224,11 +238,8 @@
         <!-- Phase 1 -->
         <div class="border border-orange-100 rounded-lg p-4 hover:shadow-md transition">
             <h4 class="font-bold text-orange-700 text-xl mb-2">Phase 1: Préparation de la pâte</h4>
-            <div class="video-placeholder mb-4 rounded-lg overflow-hidden">
-                <video controls class="w-full">
-                    <source src="preparation-pate.mp4" type="video/mp4">
-                    Votre navigateur ne supporte pas les vidéos HTML5.
-                </video>
+            <div class="video-container mb-4 rounded-lg overflow-hidden">
+                <iframe width="100%" height="400" src="https://www.youtube.com/embed/OOicORW-FWQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
             <p class="text-gray-600">Préparation homogène de la pâte argileuse pour une qualité constante.</p>
         </div>
@@ -236,11 +247,8 @@
         <!-- Phase 2 -->
         <div class="border border-orange-100 rounded-lg p-4 hover:shadow-md transition">
             <h4 class="font-bold text-orange-700 text-xl mb-2">Phase 2: Façonnage (3000 pièces/heure)</h4>
-            <div class="video-placeholder mb-4 rounded-lg overflow-hidden">
-                <video controls class="w-full">
-                    <source src="faconnage.mp4" type="video/mp4">
-                    Votre navigateur ne supporte pas les vidéos HTML5.
-                </video>
+            <div class="video-container mb-4 rounded-lg overflow-hidden">
+                <iframe width="100%" height="400" src="https://www.youtube.com/embed/xvScrJdNzkM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
             <p class="text-gray-600">Production moyenne de 3000 pièces par heure grâce à nos machines optimisées.</p>
         </div>
@@ -248,11 +256,8 @@
         <!-- Phase 3 -->
         <div class="border border-orange-100 rounded-lg p-4 hover:shadow-md transition">
             <h4 class="font-bold text-orange-700 text-xl mb-2">Phase 3: Séchage</h4>
-            <div class="video-placeholder mb-4 rounded-lg overflow-hidden">
-                <video controls class="w-full">
-                    <source src="sechage.mp4" type="video/mp4">
-                    Votre navigateur ne supporte pas les vidéos HTML5.
-                </video>
+            <div class="video-container mb-4 rounded-lg overflow-hidden">
+                <iframe width="100%" height="400" src="https://www.youtube.com/embed/5Tjivojiiuw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
             <p class="text-gray-600">Séchoir avec ventilation d'air chaud pour un séchage uniforme et contrôlé.</p>
         </div>
@@ -260,11 +265,8 @@
         <!-- Phase 4 -->
         <div class="border border-orange-100 rounded-lg p-4 hover:shadow-md transition">
             <h4 class="font-bold text-orange-700 text-xl mb-2">Phase 4: Empilage sur wagons</h4>
-            <div class="video-placeholder mb-4 rounded-lg overflow-hidden">
-                <video controls class="w-full">
-                    <source src="empilage.mp4" type="video/mp4">
-                    Votre navigateur ne supporte pas les vidéos HTML5.
-                </video>
+            <div class="video-container mb-4 rounded-lg overflow-hidden">
+                <iframe width="100%" height="400" src="https://www.youtube.com/embed/MlP0CgRkZYY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
             <p class="text-gray-600">Système d'empilage automatisé pour une manutention optimale des produits.</p>
         </div>
@@ -272,11 +274,8 @@
         <!-- Phase 5 -->
         <div class="border border-orange-100 rounded-lg p-4 hover:shadow-md transition">
             <h4 class="font-bold text-orange-700 text-xl mb-2">Phase 5: Cuisson (four atmosphérique)</h4>
-            <div class="video-placeholder mb-4 rounded-lg overflow-hidden">
-                <video controls class="w-full">
-                    <source src="cuisson.mp4" type="video/mp4">
-                    Votre navigateur ne supporte pas les vidéos HTML5.
-                </video>
+            <div class="video-container mb-4 rounded-lg overflow-hidden">
+                <iframe width="100%" height="400" src="https://www.youtube.com/embed/2ON7tMbG5g8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
             <p class="text-gray-600">Cuisson précise dans nos fours atmosphériques pour une qualité constante.</p>
         </div>
@@ -298,50 +297,40 @@
                 <div class="grid md:grid-cols-2 lg:grid-cols-5 gap-4">
                     <!-- Phase 1 -->
                     <div class="text-center">
-                        <div class="video-placeholder h-40 mb-2 rounded-lg overflow-hidden">
-                            <video controls class="w-full h-full object-cover">
-                                <source src="preparation-pate.mp4" type="video/mp4">
-                            </video>
+                        <div class="video-container h-40 mb-2 rounded-lg overflow-hidden">
+                            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/OOicORW-FWQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
                         <h4 class="font-medium text-orange-700">1. Préparation</h4>
                     </div>
                     
                     <!-- Phase 2 -->
                     <div class="text-center">
-                        <div class="video-placeholder h-40 mb-2 rounded-lg overflow-hidden">
-                            <video controls class="w-full h-full object-cover">
-                                <source src="faconnage.mp4" type="video/mp4">
-                            </video>
+                        <div class="video-container h-40 mb-2 rounded-lg overflow-hidden">
+                            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/xvScrJdNzkM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
                         <h4 class="font-medium text-orange-700">2. Façonnage</h4>
                     </div>
                     
                     <!-- Phase 3 -->
                     <div class="text-center">
-                        <div class="video-placeholder h-40 mb-2 rounded-lg overflow-hidden">
-                            <video controls class="w-full h-full object-cover">
-                                <source src="sechage.mp4" type="video/mp4">
-                            </video>
+                        <div class="video-container h-40 mb-2 rounded-lg overflow-hidden">
+                            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/5Tjivojiiuw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
                         <h4 class="font-medium text-orange-700">3. Séchage</h4>
                     </div>
                     
                     <!-- Phase 4 -->
                     <div class="text-center">
-                        <div class="video-placeholder h-40 mb-2 rounded-lg overflow-hidden">
-                            <video controls class="w-full h-full object-cover">
-                                <source src="empilage.mp4" type="video/mp4">
-                            </video>
+                        <div class="video-container h-40 mb-2 rounded-lg overflow-hidden">
+                            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/MlP0CgRkZYY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
                         <h4 class="font-medium text-orange-700">4. Empilage</h4>
                     </div>
                     
                     <!-- Phase 5 -->
                     <div class="text-center">
-                        <div class="video-placeholder h-40 mb-2 rounded-lg overflow-hidden">
-                            <video controls class="w-full h-full object-cover">
-                                <source src="cuisson.mp4" type="video/mp4">
-                            </video>
+                        <div class="video-container h-40 mb-2 rounded-lg overflow-hidden">
+                            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/2ON7tMbG5g8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
                         <h4 class="font-medium text-orange-700">5. Cuisson</h4>
                     </div>
@@ -352,20 +341,16 @@
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div class="bg-white p-6 rounded-xl shadow-lg">
                     <h3 class="text-xl font-semibold text-orange-600 mb-4">Production à grande échelle</h3>
-                    <div class="video-placeholder h-64 rounded-lg overflow-hidden">
-                        <video controls class="w-full h-full">
-                            <source src="production-large.mp4" type="video/mp4">
-                        </video>
+                    <div class="video-container h-64 rounded-lg overflow-hidden">
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/Ac22lXhier4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                     <p class="mt-4 text-gray-600">Capacité de production de 3000 pièces par heure avec notre ligne automatisée.</p>
                 </div>
                 
                 <div class="bg-white p-6 rounded-xl shadow-lg">
                     <h3 class="text-xl font-semibold text-orange-600 mb-4">Système de séchage innovant</h3>
-                    <div class="video-placeholder h-64 rounded-lg overflow-hidden">
-                        <video controls class="w-full h-full">
-                            <source src="sechoir.mp4" type="video/mp4">
-                        </video>
+                    <div class="video-container h-64 rounded-lg overflow-hidden">
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/JAxArc3X9wU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                     <p class="mt-4 text-gray-600">Séchoir avec ventilation d'air chaud pour un séchage homogène et rapide.</p>
                 </div>
@@ -373,7 +358,6 @@
         </div>
     </div>
 </section>
-    </section>
 
     <section id="installation" class="py-16">
         <div class="container mx-auto px-4">
