@@ -1,31 +1,30 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Expert en réparation, fabrication et installation d'équipements pour la production artisanale de terre cuite. Solutions sur mesure pour ateliers et artisans.">
     <!-- Primary Meta Tags -->
-    <title>Artisan Terre Cuite - Équipements Professionnels pour Production Céramique</title>
-    <meta name="title" content="Artisan Terre Cuite - Équipements Professionnels pour Production Céramique">
+    <title>Almarse - Équipements Professionnels pour Production Céramique</title>
+    <meta name="title" content="Almarse - Équipements Professionnels pour Production Céramique">
     <meta name="description" content="Fabrication, réparation et installation d'équipements pour la production de terre cuite. Presses, extrudeuses, fours et séchoirs sur mesure au Maroc.">
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.artisan-terre-cuite.com/">
-    <meta property="og:title" content="Artisan Terre Cuite - Équipements Professionnels pour Production Céramique">
+    <meta property="og:url" content="https://www.almarse.com/">
+    <meta property="og:title" content="Almarse - Équipements Professionnels pour Production Céramique">
     <meta property="og:description" content="Fabrication, réparation et installation d'équipements pour la production de terre cuite. Presses, extrudeuses, fours et séchoirs sur mesure au Maroc.">
-    <meta property="og:image" content="https://www.artisan-terre-cuite.com/images/social-preview.jpg">
+    <meta property="og:image" content="https://www.almarse.com/images/social-preview.jpg">
     
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://www.artisan-terre-cuite.com/">
-    <meta property="twitter:title" content="Artisan Terre Cuite - Équipements Professionnels pour Production Céramique">
+    <meta property="twitter:url" content="https://www.almarse.com/">
+    <meta property="twitter:title" content="Almarse - Équipements Professionnels pour Production Céramique">
     <meta property="twitter:description" content="Fabrication, réparation et installation d'équipements pour la production de terre cuite. Presses, extrudeuses, fours et séchoirs sur mesure au Maroc.">
-    <meta property="twitter:image" content="https://www.artisan-terre-cuite.com/images/social-preview.jpg">
+    <meta property="twitter:image" content="https://www.almarse.com/images/social-preview.jpg">
 
     <!-- Canonical URL -->
-    <link rel="canonical" href="https://www.artisan-terre-cuite.com/" />
+    <link rel="canonical" href="https://www.almarse.com/" />
     
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="/favicon.png">
@@ -36,10 +35,10 @@
     {
       "@context": "https://schema.org",
       "@type": "LocalBusiness",
-      "name": "Artisan Terre Cuite",
-      "image": "https://www.artisan-terre-cuite.com/images/logo.jpg",
-      "@id": "https://www.artisan-terre-cuite.com/",
-      "url": "https://www.artisan-terre-cuite.com/",
+      "name": "Almarse",
+      "image": "https://www.almarse.com/images/logo.jpg",
+      "@id": "https://www.almarse.com/",
+      "url": "https://www.almarse.com/",
       "telephone": "+212662629003",
       "address": {
         "@type": "PostalAddress",
@@ -68,15 +67,11 @@
         "closes": "18:00"
       },
       "sameAs": [
-        "https://www.facebook.com/artisanterrecuite",
-        "https://www.instagram.com/artisanterrecuite"
+        "https://www.facebook.com/almarse",
+        "https://www.instagram.com/almarse"
       ]
     }
     </script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Expert en réparation, fabrication et installation d'équipements pour la production artisanale de terre cuite. Solutions sur mesure pour ateliers et artisans.">
-    <title>Artisan Terre Cuite - Réparation, Fabrication & Installation d'Équipements</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -117,35 +112,42 @@
             content: '✓';
             @apply text-orange-500 font-bold mr-2;
         }
-		.video-container {
-    position: relative;
-    padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
-    height: 0;
-    overflow: hidden;
-}
-
-.video-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            height: 0;
+            overflow: hidden;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        #back-to-top {
+            @apply fixed bottom-20 right-6 bg-orange-600 text-white p-3 rounded-full shadow-lg z-40 opacity-0 invisible transition-all duration-300 hover:bg-orange-700 hover:scale-110;
+        }
     </style>
 </head>
 <body class="bg-orange-50">
 
     <!-- WhatsApp Floating Button -->
-    <a href="https://wa.me/212662629003" class="whatsapp-btn" target="_blank">
+    <a href="https://wa.me/212662629003" class="whatsapp-btn" target="_blank" aria-label="Contactez-nous sur WhatsApp">
         <i class="fab fa-whatsapp text-2xl"></i>
     </a>
+
+    <!-- Back-to-Top Button -->
+    <button id="back-to-top" aria-label="Retour en haut de la page">
+        <i class="fas fa-arrow-up"></i>
+    </button>
 
     <nav class="bg-orange-600 text-white p-4 shadow-md sticky top-0 z-50">
         <div class="container mx-auto flex justify-between items-center">
             <a href="#" class="text-2xl font-bold flex items-center">
-                <i class="fas fa-clay-brick mr-2"></i> Artisan Terre Cuite
+                <i class="fas fa-clay-brick mr-2"></i> Almarse
             </a>
-            <button id="menu-button" class="md:hidden block text-white focus:outline-none">
+            <button id="menu-button" class="md:hidden block text-white focus:outline-none" aria-label="Menu mobile">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
                 </svg>
@@ -303,151 +305,154 @@
                 </div>
             </div>
             
-<!-- In the Fabrication section -->
-<div class="bg-white p-8 rounded-xl shadow-lg">
-    <h3 class="text-2xl font-semibold text-orange-600 mb-6 text-center">Processus de Production</h3>
-    <div class="grid md:grid-cols-1 gap-8">
-        <!-- Phase 1 -->
-        <div class="border border-orange-100 rounded-lg p-4 hover:shadow-md transition">
-            <h4 class="font-bold text-orange-700 text-xl mb-2">Phase 1: Préparation de la pâte</h4>
-            <div class="video-container mb-4 rounded-lg overflow-hidden">
-                <iframe width="100%" height="400" src="https://www.youtube.com/embed/OOicORW-FWQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-			
-            <p class="text-gray-600">Préparation homogène de la pâte argileuse pour une qualité constante.</p>
-			<!-- Additional Image -->
-			<div class="mt-4">
-			<img src="https://i.imgur.com/gbi7Uou.jpeg" 
-             alt="concasseur" 
-             class="w-full rounded-lg shadow-md">
-			<p class="text-sm text-gray-500 text-center mt-2">concasseur</p>
-			</div>
-            <div class="video-container mb-4 rounded-lg overflow-hidden">
-                <iframe width="100%" height="400" src="https://www.youtube.com/embed/uHVDcQKE-kE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-        </div>
-        
-        <!-- Phase 2 -->
-        <div class="border border-orange-100 rounded-lg p-4 hover:shadow-md transition">
-            <h4 class="font-bold text-orange-700 text-xl mb-2">Phase 2: Façonnage (3000 pièces/heure)</h4>
-            <div class="video-container mb-4 rounded-lg overflow-hidden">
-                <iframe width="100%" height="400" src="https://www.youtube.com/embed/xvScrJdNzkM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            <p class="text-gray-600">Production moyenne de 3000 pièces par heure grâce à nos machines optimisées.</p>
-        </div>
-        
-        <!-- Phase 3 -->
-        <div class="border border-orange-100 rounded-lg p-4 hover:shadow-md transition">
-            <h4 class="font-bold text-orange-700 text-xl mb-2">Phase 3: Séchage</h4>
-            <div class="video-container mb-4 rounded-lg overflow-hidden">
-                <iframe width="100%" height="400" src="https://www.youtube.com/embed/5Tjivojiiuw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            <p class="text-gray-600">Séchoir avec ventilation d'air chaud pour un séchage uniforme et contrôlé.</p>
-        </div>
-        
-        <!-- Phase 4 -->
-        <div class="border border-orange-100 rounded-lg p-4 hover:shadow-md transition">
-            <h4 class="font-bold text-orange-700 text-xl mb-2">Phase 4: Empilage sur wagons</h4>
-            <div class="video-container mb-4 rounded-lg overflow-hidden">
-                <iframe width="100%" height="400" src="https://www.youtube.com/embed/MlP0CgRkZYY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            <p class="text-gray-600">Système d'empilage automatisé pour une manutention optimale des produits.</p>
-        </div>
-        
-        <!-- Phase 5 -->
-        <div class="border border-orange-100 rounded-lg p-4 hover:shadow-md transition">
-            <h4 class="font-bold text-orange-700 text-xl mb-2">Phase 5: Cuisson (four atmosphérique)</h4>
-            <div class="video-container mb-4 rounded-lg overflow-hidden">
-                <iframe width="100%" height="400" src="https://www.youtube.com/embed/2ON7tMbG5g8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            <p class="text-gray-600">Cuisson précise dans nos fours atmosphériques pour une qualité constante.</p>
-					<!-- Additional Image -->
-    <div class="mt-4">
-        <img src="https://i.imgur.com/F1aAtgH.jpeg" 
-             alt="Produits finis après cuisson" 
-             class="w-full rounded-lg shadow-md">
-        <p class="text-sm text-gray-500 text-center mt-2">Produits finis après cuisson dans notre four atmosphérique</p>
-    </div>
-        </div>
-    </div>
-</div>
-
-<!-- In the Gallery section -->
-<section id="galerie" class="py-16 bg-orange-100">
-    <div class="container mx-auto px-4">
-        <h2 class="section-title">Processus de Production en Vidéo</h2>
-        <p class="text-center text-gray-600 mb-12 max-w-3xl mx-auto">
-            Découvrez notre processus de production complet pour les produits en terre cuite, de la préparation de la pâte à la cuisson finale.
-        </p>
-        
-        <div class="grid grid-cols-1 gap-8">
-            <!-- Production Process Videos -->
-            <div class="bg-white p-6 rounded-xl shadow-lg">
-                <h3 class="text-xl font-semibold text-orange-600 mb-4">Ligne de production complète</h3>
-                <div class="grid md:grid-cols-2 lg:grid-cols-5 gap-4">
+            <div class="bg-white p-8 rounded-xl shadow-lg">
+                <h3 class="text-2xl font-semibold text-orange-600 mb-6 text-center">Processus de Production</h3>
+                <div class="grid md:grid-cols-1 gap-8">
                     <!-- Phase 1 -->
-                    <div class="text-center">
-                        <div class="video-container h-40 mb-2 rounded-lg overflow-hidden">
-                            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/OOicORW-FWQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div class="border border-orange-100 rounded-lg p-4 hover:shadow-md transition">
+                        <h4 class="font-bold text-orange-700 text-xl mb-2">Phase 1: Préparation de la pâte</h4>
+						<div class="video-container mb-4 rounded-lg overflow-hidden">
+                            <iframe width="100%" height="400" src="https://www.youtube.com/embed/uHVDcQKE-kE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
-                        <h4 class="font-medium text-orange-700">1. Préparation</h4>
+                        <div class="video-container mb-4 rounded-lg overflow-hidden">
+                            <iframe width="100%" height="400" src="https://www.youtube.com/embed/OOicORW-FWQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+            
+                        <p class="text-gray-600">Préparation homogène de la pâte argileuse pour une qualité constante.</p>
+                        <!-- Additional Image -->
+                        <div class="mt-4">
+                        <img src="https://i.imgur.com/gbi7Uou.jpeg" 
+                         alt="concasseur" 
+                         class="w-full rounded-lg shadow-md">
+                        <p class="text-sm text-gray-500 text-center mt-2">concasseur</p>
+                        </div>
                     </div>
                     
                     <!-- Phase 2 -->
-                    <div class="text-center">
-                        <div class="video-container h-40 mb-2 rounded-lg overflow-hidden">
-                            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/xvScrJdNzkM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div class="border border-orange-100 rounded-lg p-4 hover:shadow-md transition">
+                        <h4 class="font-bold text-orange-700 text-xl mb-2">Phase 2: Façonnage (3000 pièces/heure)</h4>
+                        <div class="video-container mb-4 rounded-lg overflow-hidden">
+                            <iframe width="100%" height="400" src="https://www.youtube.com/embed/xvScrJdNzkM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
-                        <h4 class="font-medium text-orange-700">2. Façonnage</h4>
+                        <p class="text-gray-600">Production moyenne de 3000 pièces par heure grâce à nos machines optimisées.</p>
                     </div>
                     
                     <!-- Phase 3 -->
-                    <div class="text-center">
-                        <div class="video-container h-40 mb-2 rounded-lg overflow-hidden">
-                            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/5Tjivojiiuw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div class="border border-orange-100 rounded-lg p-4 hover:shadow-md transition">
+                        <h4 class="font-bold text-orange-700 text-xl mb-2">Phase 3: Séchage</h4>
+                        <div class="video-container mb-4 rounded-lg overflow-hidden">
+                            <iframe width="100%" height="400" src="https://www.youtube.com/embed/5Tjivojiiuw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
-                        <h4 class="font-medium text-orange-700">3. Séchage</h4>
+                        <p class="text-gray-600">Séchoir avec ventilation d'air chaud pour un séchage uniforme et contrôlé.</p>
                     </div>
                     
                     <!-- Phase 4 -->
-                    <div class="text-center">
-                        <div class="video-container h-40 mb-2 rounded-lg overflow-hidden">
-                            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/MlP0CgRkZYY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div class="border border-orange-100 rounded-lg p-4 hover:shadow-md transition">
+                        <h4 class="font-bold text-orange-700 text-xl mb-2">Phase 4: Empilage sur wagons</h4>
+                        						<div class="mt-4">
+                        <img src="https://i.imgur.com/lBFpByo.jpeg" 
+                         alt="produit empilé" 
+                         class="w-full rounded-lg shadow-md">
+                        <p class="text-sm text-gray-500 text-center mt-2">produit empilé</p>
                         </div>
-                        <h4 class="font-medium text-orange-700">4. Empilage</h4>
+                        <p class="text-gray-600">Système d'empilage pour une manutention optimale des produits.</p>
                     </div>
                     
                     <!-- Phase 5 -->
-                    <div class="text-center">
-                        <div class="video-container h-40 mb-2 rounded-lg overflow-hidden">
-                            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/2ON7tMbG5g8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div class="border border-orange-100 rounded-lg p-4 hover:shadow-md transition">
+                        <h4 class="font-bold text-orange-700 text-xl mb-2">Phase 5: Cuisson (four atmosphérique)</h4>
+                        <div class="video-container mb-4 rounded-lg overflow-hidden">
+                            <iframe width="100%" height="400" src="https://www.youtube.com/embed/2ON7tMbG5g8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
-                        <h4 class="font-medium text-orange-700">5. Cuisson</h4>
+                        <p class="text-gray-600">Cuisson précise dans nos fours atmosphériques pour une qualité constante.</p>
+                        <!-- Additional Image -->
+                        <div class="mt-4">
+                            <img src="https://i.imgur.com/F1aAtgH.jpeg" 
+                                 alt="Produits finis après cuisson" 
+                                 class="w-full rounded-lg shadow-md">
+                            <p class="text-sm text-gray-500 text-center mt-2">Produits finis après cuisson dans notre four atmosphérique</p>
+                        </div>
                     </div>
-                </div>
-            </div>
-            
-            <!-- Additional Videos -->
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div class="bg-white p-6 rounded-xl shadow-lg">
-                    <h3 class="text-xl font-semibold text-orange-600 mb-4">Production à grande échelle</h3>
-                    <div class="video-container h-64 rounded-lg overflow-hidden">
-                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/Ac22lXhier4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-                    <p class="mt-4 text-gray-600">Capacité de production de 3000 pièces par heure avec notre ligne automatisée.</p>
-                </div>
-                
-                <div class="bg-white p-6 rounded-xl shadow-lg">
-                    <h3 class="text-xl font-semibold text-orange-600 mb-4">Système de séchage innovant</h3>
-                    <div class="video-container h-64 rounded-lg overflow-hidden">
-                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/JAxArc3X9wU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-                    <p class="mt-4 text-gray-600">Séchoir avec ventilation d'air chaud pour un séchage homogène et rapide.</p>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
+
+    <section id="galerie" class="py-16 bg-orange-100">
+        <div class="container mx-auto px-4">
+            <h2 class="section-title">Processus de Production en Vidéo</h2>
+            <p class="text-center text-gray-600 mb-12 max-w-3xl mx-auto">
+                Découvrez notre processus de production complet pour les produits en terre cuite, de la préparation de la pâte à la cuisson finale.
+            </p>
+            
+            <div class="grid grid-cols-1 gap-8">
+                <!-- Production Process Videos -->
+                <div class="bg-white p-6 rounded-xl shadow-lg">
+                    <h3 class="text-xl font-semibold text-orange-600 mb-4">Ligne de production complète</h3>
+                    <div class="grid md:grid-cols-2 lg:grid-cols-5 gap-4">
+                        <!-- Phase 1 -->
+                        <div class="text-center">
+                            <div class="video-container h-40 mb-2 rounded-lg overflow-hidden">
+                                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/OOicORW-FWQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                            <h4 class="font-medium text-orange-700">1. Préparation</h4>
+                        </div>
+                        
+                        <!-- Phase 2 -->
+                        <div class="text-center">
+                            <div class="video-container h-40 mb-2 rounded-lg overflow-hidden">
+                                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/xvScrJdNzkM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                            <h4 class="font-medium text-orange-700">2. Façonnage</h4>
+                        </div>
+                        
+                        <!-- Phase 3 -->
+                        <div class="text-center">
+                            <div class="video-container h-40 mb-2 rounded-lg overflow-hidden">
+                                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/5Tjivojiiuw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                            <h4 class="font-medium text-orange-700">3. Séchage</h4>
+                        </div>
+                        
+                        <!-- Phase 4 -->
+                        <div class="text-center">
+                            <div class="video-container h-40 mb-2 rounded-lg overflow-hidden">
+                                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/MlP0CgRkZYY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                            <h4 class="font-medium text-orange-700">4. Empilage</h4>
+                        </div>
+                        
+                        <!-- Phase 5 -->
+                        <div class="text-center">
+                            <div class="video-container h-40 mb-2 rounded-lg overflow-hidden">
+                                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/2ON7tMbG5g8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                            <h4 class="font-medium text-orange-700">5. Cuisson</h4>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Additional Videos -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="bg-white p-6 rounded-xl shadow-lg">
+                        <h3 class="text-xl font-semibold text-orange-600 mb-4">Production à grande échelle</h3>
+                        <div class="video-container h-64 rounded-lg overflow-hidden">
+                            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/Ac22lXhier4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <p class="mt-4 text-gray-600">Capacité de production de 3000 pièces par heure avec notre ligne automatisée.</p>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-xl shadow-lg">
+                        <h3 class="text-xl font-semibold text-orange-600 mb-4">Système de séchage innovant</h3>
+                        <div class="video-container h-64 rounded-lg overflow-hidden">
+                            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/JAxArc3X9wU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <p class="mt-4 text-gray-600">Séchoir avec ventilation d'air chaud pour un séchage homogène et rapide.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <section id="installation" class="py-16">
         <div class="container mx-auto px-4">
@@ -529,40 +534,39 @@
             <p class="text-center text-gray-600 mb-12 max-w-3xl mx-auto">
                 Pour toute demande d'information, devis ou intervention, notre équipe est à votre disposition.
             </p>                                    
-                <div class="lg:w-1/2">
-                    <div class="bg-orange-50 p-8 rounded-xl h-full">
-                        <h3 class="text-2xl font-semibold text-orange-600 mb-6">Coordonnées</h3>
-                        <div class="space-y-6">
-                            <div class="flex items-start">
-                                <div class="text-orange-500 text-xl mr-4 mt-1">
-                                    <i class="fas fa-map-marker-alt"></i>
-                                </div>
-                                <div>
-                                    <h4 class="font-bold text-gray-800">Adresse</h4>
-                                    <p class="text-gray-600">Lot Oualili el bassatine <br>Meknes, Maroc</p>
-                                </div>
+            <div class="lg:w-1/2 mx-auto">
+                <div class="bg-orange-50 p-8 rounded-xl h-full">
+                    <h3 class="text-2xl font-semibold text-orange-600 mb-6">Coordonnées</h3>
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="text-orange-500 text-xl mr-4 mt-1">
+                                <i class="fas fa-map-marker-alt"></i>
                             </div>
-                            <div class="flex items-start">
-                                <div class="text-orange-500 text-xl mr-4 mt-1">
-                                    <i class="fas fa-phone-alt"></i>
-                                </div>
-                                <div>
-                                    <h4 class="font-bold text-gray-800">Téléphone</h4>
-                                    <p class="text-gray-600">
-                                        <a href="tel:+212662629003" class="hover:text-orange-600 transition">+212 6 62 62 90 03</a><br>
-                                    </p>
-                                </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800">Adresse</h4>
+                                <p class="text-gray-600">Lot Oualili el bassatine <br>Meknes, Maroc</p>
                             </div>
-                            <div class="flex items-start">
-                                <div class="text-orange-500 text-xl mr-4 mt-1">
-                                    <i class="fas fa-envelope"></i>
-                                </div>
-                                <div>
-                                    <h4 class="font-bold text-gray-800">Email</h4>
-                                    <p class="text-gray-600">
-                                        <a href="mailto:draou.abdelhaq@gmail.com" class="hover:text-orange-600 transition">draou.abdelhaq@gmail.com</a><br>
-                                     </p>
-                                </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="text-orange-500 text-xl mr-4 mt-1">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800">Téléphone</h4>
+                                <p class="text-gray-600">
+                                    <a href="tel:+212662629003" class="hover:text-orange-600 transition">+212 6 62 62 90 03</a><br>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="text-orange-500 text-xl mr-4 mt-1">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800">Email</h4>
+                                <p class="text-gray-600">
+                                    <a href="mailto:draou.abdelhaq@gmail.com" class="hover:text-orange-600 transition">draou.abdelhaq@gmail.com</a><br>
+                                 </p>
                             </div>
                         </div>
                     </div>
@@ -575,7 +579,7 @@
         <div class="container mx-auto px-4">
             <div class="grid md:grid-cols-4 gap-8 mb-8">
                 <div>
-                    <h3 class="text-xl font-bold mb-4 text-white">Artisan Terre Cuite</h3>
+                    <h3 class="text-xl font-bold mb-4 text-white">Almarse</h3>
                     <p class="mb-4">Spécialistes en équipements pour la production artisanale de terre cuite depuis 15 ans.</p>
                     <div class="flex space-x-4">
                         <a href="#" class="text-orange-200 hover:text-white text-xl">
@@ -606,7 +610,7 @@
                 </div>
             </div>
             <div class="border-t border-orange-700 pt-8 text-center">
-                <p>&copy; <span id="year"></span> Artisan Terre Cuite. Tous droits réservés.</p>
+                <p>&copy; <span id="year"></span> Almarse. Tous droits réservés.</p>
                 <p class="mt-2">Conçu avec passion pour l'artisanat traditionnel.</p>
             </div>
         </div>
@@ -619,20 +623,39 @@
         
         menuButton.addEventListener('click', () => {
             mobileMenu.classList.toggle('hidden');
-            mobileMenu.classList.toggle('animate-slideDown');
         });
 
         // Close mobile menu when clicking a link
-        document.querySelectorAll('#mobile-menu a').forEach(link => {
-            link.addEventListener('click', () => {
+        mobileMenu.addEventListener('click', (e) => {
+            if (e.target.tagName === 'A') {
                 mobileMenu.classList.add('hidden');
+            }
+        });
+
+        // Back-to-Top Button
+        const backToTopBtn = document.getElementById('back-to-top');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopBtn.classList.remove('opacity-0', 'invisible');
+                backToTopBtn.classList.add('opacity-100', 'visible');
+            } else {
+                backToTopBtn.classList.add('opacity-0', 'invisible');
+                backToTopBtn.classList.remove('opacity-100', 'visible');
+            }
+        });
+
+        backToTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
             });
         });
 
         // Update year in footer
         document.getElementById('year').textContent = new Date().getFullYear();
 
-        // Add smooth scrolling to all links
+        // Smooth scrolling for anchor links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function(e) {
                 e.preventDefault();
@@ -665,6 +688,5 @@
             observer.observe(el);
         });
     </script>
-
 </body>
 </html>
