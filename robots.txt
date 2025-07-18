@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://almarse.com/sitemap.xml
+Disallow: /private/
+Sitemap: https://www.almarse.com/sitemap.xml
