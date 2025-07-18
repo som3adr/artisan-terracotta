@@ -1,24 +1,85 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Olas Surf Camp Packages | Imsouane</title>
-    <!-- [SEO Headers] -->
+    <meta name="description" content="2024 surf lesson packages and accommodation options at Olas Surf Camp in Imsouane, Morocco.">
+    
+    <style>
+        /* Critical CSS */
+        body {
+            font-family: system-ui, sans-serif;
+            line-height: 1.5;
+            margin: 0;
+            padding: 1rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        h1 {
+            text-align: center;
+            color: #1a365d;
+        }
+        .btn {
+            display: inline-block;
+            background: #2a6496;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.5rem;
+            text-decoration: none;
+            margin: 1rem 0;
+            font-weight: bold;
+            transition: background 0.2s;
+        }
+        .btn:hover {
+            background: #1a4b7a;
+        }
+        .iframe-container {
+            margin: 2rem 0;
+        }
+        iframe {
+            width: 100%;
+            border: none;
+            border-radius: 0.5rem;
+        }
+    </style>
 </head>
 <body>
     <h1>Our 2024 Surf Packages</h1>
     
     <!-- Google Doc -->
-    <iframe src="https://docs.google.com/document/d/1UoVWTGQTa3fHnfD0o8jK9cn2LYwCgwcU-u6TVXPK6W0/preview" 
-            width="100%" height="600"></iframe>
+    <div class="iframe-container">
+        <iframe 
+            data-src="https://docs.google.com/document/d/1UoVWTGQTa3fHnfD0o8jK9cn2LYwCgwcU-u6TVXPK6W0/preview" 
+            height="600"
+            loading="lazy"
+            title="Surf Camp Packages Document"
+            aria-label="Price Packages Document"></iframe>
+    </div>
     
     <!-- Booking Form -->
     <h2>Book Your Stay</h2>
-    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScbz3pIcSHfEhZbcM_0wGHMHy4-t-cwc7CSr0wNgLUZost-lg/viewform?embedded=true" 
-            width="100%" height="800">Loading…</iframe>
+    <div class="iframe-container">
+        <iframe 
+            data-src="https://docs.google.com/forms/d/e/1FAIpQLScbz3pIcSHfEhZbcM_0wGHMHy4-t-cwc7CSr0wNgLUZost-lg/viewform?embedded=true" 
+            height="800"
+            loading="lazy"
+            title="Booking Form"
+            aria-label="Reservation Form">Loading booking form...</iframe>
+    </div>
     
     <!-- Price Calculator -->
-    <a href="https://colab.research.google.com/drive/1AamOFkZH3GJO0w_qJ5vRwfg3rZRYgjx6" class="btn">
-        Open Price Calculator
-    </a>
+    <div style="text-align: center; margin: 2rem 0;">
+        <a href="https://colab.research.google.com/drive/1AamOFkZH3GJO0w_qJ5vRwfg3rZRYgjx6" class="btn">
+            Open Price Calculator
+        </a>
+    </div>
+
+    <script>
+        // Lazy load iframes
+        document.querySelectorAll('iframe[data-src]').forEach(iframe => {
+            iframe.src = iframe.dataset.src;
+        });
+    </script>
 </body>
 </html>
